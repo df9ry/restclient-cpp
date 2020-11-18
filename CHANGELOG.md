@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.5.2-DF9RY (18th November 2020)
+- Forked from the original repo
+- Removed all unnecessary stuff
+- Created new CMake.txt
+
 ## v0.5.2 (12th February 2020)
 - add a pkg-config setup
 - Use the standard CMake-flag BUILD_SHARED_LIBS. (tastytea)

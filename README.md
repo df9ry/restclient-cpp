@@ -1,13 +1,10 @@
 # REST client for C++
-[![Build Status](https://travis-ci.org/mrtazz/restclient-cpp.svg?branch=master)](https://travis-ci.org/mrtazz/restclient-cpp)
-[![Coverage Status](https://coveralls.io/repos/mrtazz/restclient-cpp/badge.svg?branch=master&service=github)](https://coveralls.io/github/mrtazz/restclient-cpp?branch=master)
-[![Packagecloud](https://img.shields.io/badge/packagecloud-available-brightgreen.svg)](https://packagecloud.io/mrtazz/restclient-cpp)
-[![doxygen](https://img.shields.io/badge/doxygen-reference-blue.svg)](http://code.mrtazz.com/restclient-cpp/ref/)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
 
 ## About
 This is a simple REST client for C++. It wraps [libcurl][] for HTTP requests.
+This repo is a fork of https://github.com/mrtazz/restclient-cpp
 
 ## Usage
 restclient-cpp provides two ways of interacting with REST endpoints. There is
@@ -299,34 +296,7 @@ auto resp = conn->get("/images/json");
 - [libcurl][]
 
 ## Installation
-There are some packages available for Linux on [packagecloud][packagecloud].
-And for OSX you can get it from the mrtazz/oss homebrew tap:
-
-```bash
-brew tap mrtazz/oss
-brew install restclient-cpp
-```
-
-Otherwise you can do the regular autotools dance:
-
-```bash
-./autogen.sh
-./configure
-make install
-```
-
-Alternatively, you can build and install restclient-cpp using [vcpkg](https://github.com/microsoft/vcpkg/) dependency manager:
-
-```bash
-git clone https://github.com/Microsoft/vcpkg.git
-cd vcpkg
-./bootstrap-vcpkg.sh
-./vcpkg integrate install
-./vcpkg install restclient-cpp
-```
-
-The restclient-cpp port in vcpkg is kept up to date by Microsoft team members and community contributors.
-If the version is out of date, please [create an issue or pull request](https://github.com/Microsoft/vcpkg) on the vcpkg repository.
+Standard CMake. Only set CMAKE_INSTALL_PREFIX and go.
 
 ## Contribute
 All contributions are highly appreciated. This includes filing issues,

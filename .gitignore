@@ -11,6 +11,7 @@ config*
 vendor/*
 test-program
 .libs
+*.user
 
 restclient-cpp.pc
 
